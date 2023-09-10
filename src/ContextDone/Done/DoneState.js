@@ -7,7 +7,7 @@ const DoneState = (props) => {
 
   const [Done, setDone] = useState(DoneInitial);
   const getDone = async () => {
-    const response = await fetch(`${host}/api/doneR/fetchallDone`, {
+    const response = await fetch(`/api/doneR/fetchallDone`, {
       method: "GET",
 
       headers: {

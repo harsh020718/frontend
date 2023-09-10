@@ -7,7 +7,7 @@ const DoingState = (props) => {
 
   const [Doing, setDoing] = useState(DoingInitial);
   const getDoing = async () => {
-    const response = await fetch(`${host}/api/doingR/fetchallDoing`, {
+    const response = await fetch(`/api/doingR/fetchallDoing`, {
       method: "GET",
 
       headers: {

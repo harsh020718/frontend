@@ -8,7 +8,7 @@ const Login = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("https://backend-4tu5zhsj3-harsh020718.vercel.app/api/auth/login", {
+    const response = await fetch("/api/auth/login", {
       method: "POST",
 
       headers: {

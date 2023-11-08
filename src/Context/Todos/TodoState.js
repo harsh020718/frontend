@@ -7,7 +7,7 @@ const TodoState = (props) => {
 
   const [Todos, setTodos] = useState(TodosInitial);
   const getTodos = async () => {
-    const response = await fetch(`/api/todoR/fetchalltodos`, {
+    const response = await fetch(`${host}/api/todoR/fetchalltodos`, {
       method: "GET",
 
       headers: {

@@ -7,7 +7,7 @@ const DoneState = (props) => {
 
   const [Done, setDone] = useState(DoneInitial);
   const getDone = async () => {
-    const response = await fetch(`/api/doneR/fetchallDone`, {
+    const response = await fetch(`${host}/api/doneR/fetchallDone`, {
       method: "GET",
 
       headers: {
@@ -16,7 +16,7 @@ const DoneState = (props) => {
       },
     });
     const json = await response.json();
-    console.log("Received data from API:", json);
+    // console.log("Received data from API:", json);
     setDone(json);
   };
 
